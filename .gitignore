@@ -2,3 +2,4 @@ scripts/ext/
 styles/ext/
 bower_components/
 ext
+node_modules/
