@@ -1,16 +1,26 @@
+* { margin: 0; padding: 0; }
+body { font-family: 'Open Sans'; }
+
 h1 { }
 .container {
   display: flex;
   flex-direction: row;
+  padding: 0rem;
+  color: #fff;
 }
 .sidebar {
+  padding: 1rem;
+  background-color: #76E4B5;
 }
 
 .list {
   display: flex;
   flex-direction: row;
+  background-color: #D6BC7A;
+  padding: 1rem;
 }
 
 .list .columns {
   width: 33%;
+  padding: 1rem;
 }
