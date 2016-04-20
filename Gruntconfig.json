@@ -1,31 +1,34 @@
 {
+  "configVars": {
+    "app": "app",
+    "appjs": "scripts",
+    "appcss": "styles",
+    "build": "build",
+    "dist": "dist",
+    "hostname": "localhost",
+    "port": 8080
+  },
 
-"configVars": {
-  "app": "app",
-  "appjs": "scripts",
-  "appcss": "styles",
-  "build": "build",
-  "dist": "dist",
-  "hostname": "localhost",
-  "port": 8080
-},
-"bowerFiles": [
-  "angular/angular.js",
-  "angular-route/angular-route.js",
-  "angularAMD/dist/angularAMD.js",
-  "angularAMD/dist/ngload.js",
-  "requirejs/require.js",
-  "es5-shim/es5-shim.js",
-  "json3/lib/json3.js",
-  "angular-animate/angular-animate.js",
-  "angular-cookies/angular-cookies.js",
-  "angular-resource/angular-resource.js",
-  "angular-sanitize/angular-sanitize.js",
-  "angular-touch/angular-touch.js"
-],
-"cssFiles": [],
-"buildFiles": [
-  "images/**"
-]
+  "bowerFiles": [
+    "angular/angular.js",
+    "angular-route/angular-route.js",
+    "angularAMD/dist/angularAMD.js",
+    "angularAMD/dist/ngload.js",
+    "requirejs/require.js",
+    "es5-shim/es5-shim.js",
+    "json3/lib/json3.js",
+    "angular-animate/angular-animate.js",
+    "angular-cookies/angular-cookies.js",
+    "angular-resource/angular-resource.js",
+    "angular-sanitize/angular-sanitize.js",
+    "angular-touch/angular-touch.js",
+    "leaflet/leatlet.js",
+    "angular-leaflet-directive/dist/angular-leaflet-directive.min.js"
+  ],
 
+  "cssFiles": [],
+
+  "buildFiles": [
+    "images/**"
+  ]
 }

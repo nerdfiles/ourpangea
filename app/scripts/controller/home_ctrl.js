@@ -1,4 +1,6 @@
 define([
+  'leaflet',
+  'angular-leaflet-directive',
   function () {
     return [
       '$scope',
@@ -14,6 +16,14 @@ define([
         $scope.loadEvents = function () {
 
         };
+        angular.extend($scope, {
+          center: {
+            lat: 51.505,
+            lng: -0.09,
+            zoom: 8
+          }
+        });
+
       }
     ];
   }
