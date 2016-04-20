@@ -2,3 +2,7 @@
 h1 {
   color: blue
 }
+.list ul {
+  display: flex;
+  flex-direction: column;
+}
