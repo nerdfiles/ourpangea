@@ -1,14 +1,20 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html
+  class="no-js"
+  lang="en"
+  itemscope
+  itemtype="http://schema.org/WebSite"
+>
 
 <head>
 
   <meta charset="utf-8" />
   <title></title>
+
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="scripts/ext/leaflet.css" />
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
   <!-- endbower -->
@@ -16,11 +22,29 @@
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css" >
   <!-- endbuild --> 
-  <script data-main="scripts/main.js" src="scripts/ext/require.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+  <script
+    data-main="scripts/boot.js"
+    src="scripts/ext/require.js"
+  ></script>
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://fonts.googleapis.com/css?family=Open+Sans"
+  />
+
+  <link
+    itemprop="url"
+    href="http://www.ourpangea.com/"
+  />
+
 </head>
 
-<body ng-class="WebPage">
+<body
+  ng-class="WebPage"
+  itemscope
+  itemtype="http://schema.org/WebPage"
+>
 
 
 <!--[if lt IE 7]>
@@ -28,7 +52,11 @@
 <![endif]-->
 
 
-<div ng-view></div>
+<div
+  itemprop="mainEntity"
+  itemscope
+  ng-view
+></div>
 
 
 <script>
@@ -57,7 +85,10 @@
 <!-- endbuild -->
 
 <!-- @exclude -->
-<script type="text/javascript" src="http://localhost:8080/livereload.js?snipver=1"></script>
+<script
+  type="text/javascript"
+  src="http://localhost:8080/livereload.js?snipver=1"
+></script>
 <!-- @endexclude -->
 
 </body>

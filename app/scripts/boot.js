@@ -14,9 +14,14 @@ require.config({
     "leaflet"                   : "ext/leaflet",
     "angular-leaflet-directive" : "ext/angular-leaflet-directive.min",
 
-    "directives/ngHideAuth" : "directives/ngHideAuth",
-    "directives/ngShowAuth" : "directives/ngShowAuth"
-    "filters/reverse"       : "filters/reverse"
+    "directives/ngHideAuth"     : "directives/ngHideAuth",
+    "directives/ngShowAuth"     : "directives/ngShowAuth",
+    "directives/ngSearchAction" : "directives/ngSearchAction",
+    "filters/reverse"           : "filters/reverse"
+
+    "routes/setup"              : "routes/setup",
+    "routes/authenticate"       : "routes/authenticate",
+    "routes/initialize"         : "routes/initialize"
 
     // @TODO firebase, etc.
   },
