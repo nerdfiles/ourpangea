@@ -17,6 +17,11 @@
     "requirejs/require.js",
     "es5-shim/es5-shim.js",
     "json3/lib/json3.js",
+    "angular-aria/angular-aria.js",
+    "angular-material/angular-material.css",
+    "angular-material/angular-material.js",
+    "angular-mocks/angular-mocks.js",
+    "angular-messages/angular-messages.js",
     "angular-animate/angular-animate.js",
     "angular-cookies/angular-cookies.js",
     "angular-resource/angular-resource.js",
@@ -24,7 +29,8 @@
     "angular-touch/angular-touch.js",
     "leaflet/dist/leaflet.css",
     "leaflet/dist/leaflet.js",
-    "angular-leaflet-directive/dist/angular-leaflet-directive.min.js"
+    "angular-leaflet-directive/dist/angular-leaflet-directive.min.js",
+    "firebase/firebase.js"
   ],
 
   "cssFiles": [],

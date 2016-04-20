@@ -6,9 +6,9 @@
  *   <div ng-hide-auth></div>
  */
 
-define(['interface'], function (__interface__) {
+define(['angularAMD'], function (angularAMD) {
 
-  __interface__
+  angularAMD
 
     .directive('ngHideAuth', ['Auth', '$timeout', function (Auth, $timeout) {
 

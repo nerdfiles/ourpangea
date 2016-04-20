@@ -11,9 +11,7 @@
  */
 define([], function () {
 
-  __interface__
-
-  .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+  return function($routeProvider, $locationProvider) {
 
     $locationProvider.html5Mode(true);
 
@@ -41,8 +39,6 @@ define([], function () {
 
       .otherwise({redirectTo: '/home'});
 
-  }])
-
-  .constant('SECURED_ROUTES', {});
+  };
 
 });
