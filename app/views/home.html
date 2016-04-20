@@ -1,13 +1,27 @@
 <h1>{{message}}</h1>
 
 <div class="container">
+
   <div class="sidebar">
+
     <ul>
-      <li><img src="" alt="Logo" /></li>
+      <li>
+        <a href="">
+          <img 
+            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150"
+            alt="Logo"
+          />
+        </a>
+      </li>
     </ul>
+
     <ul class="columns">
       <li>Search</li>
-      <li>Connect</li>
+      <li>
+        <a ng-click="login();">
+          Connect
+        </a>
+      </li>
       <li>
         <ul>
           <li>#tag1</li>
@@ -15,9 +29,17 @@
         </ul>
       </li>
     </ul>
+
   </div>
+
   <div class="list">
-    <leaflet lf-center="center" height="480px" width="640px"></leaflet>
+
+    <leaflet
+      lf-center="center"
+      height="480px"
+      width="640px"
+    ></leaflet>
+
     <div class="columns">
       <h2>Topics</h2>
       <ul>
@@ -28,6 +50,7 @@
         <li>Topic 1</li>
       </ul>
     </div>
+
     <div class="columns">
       <h2>Photos</h2>
       <ul>
@@ -38,6 +61,7 @@
         <li>Photo 5</li>
       </ul>
     </div>
+
     <div class="columns">
       <h2>Events</h2>
       <ul>
@@ -48,5 +72,7 @@
         <li>Event 5</li>
       </ul>
     </div>
+
   </div>
+
 </div>

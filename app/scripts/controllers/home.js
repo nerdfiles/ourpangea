@@ -33,6 +33,10 @@ define([
       leafletData.getMap().then(function(map) {
         /*new L.Marker([0,0]).addTo(map);*/
       });
+
+      $scope.login = function () {
+
+      };
     }
 
     return [
