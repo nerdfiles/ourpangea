@@ -5,9 +5,9 @@
  * The converse of the ng-hide-auth.
  */
 
-define(['interface'], function (__interface__) {
+define(['angularAMD'], function (angularAMD) {
 
-  __interface__
+  angularAMD
 
     .directive('ngShowAuth', ['Auth', '$timeout', function (Auth, $timeout) {
 

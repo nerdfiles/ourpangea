@@ -14,10 +14,11 @@ require.config({
     "leaflet"                   : "ext/leaflet",
     "angular-leaflet-directive" : "ext/angular-leaflet-directive.min",
 
+    "interface": "interface",
     "directives/ngHideAuth"     : "directives/ngHideAuth",
     "directives/ngShowAuth"     : "directives/ngShowAuth",
     "directives/ngSearchAction" : "directives/ngSearchAction",
-    "filters/reverse"           : "filters/reverse"
+    "filters/reverse"           : "filters/reverse",
 
     "routes/setup"              : "routes/setup",
     "routes/authenticate"       : "routes/authenticate",

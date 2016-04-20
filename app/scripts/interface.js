@@ -38,7 +38,9 @@ define([
     'firebase.auth'
   ]);
 
-  __interface__.config([
+  __interface__
+
+  .config([
     '$routeProvider',
     '$locationProvider',
     setup

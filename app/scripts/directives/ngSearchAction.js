@@ -5,7 +5,7 @@
  * Search Action directive.
  */
 
-define(['interface'], function (__interface__) {
+define(['angularAMD'], function (angularAMD) {
 
   function ngSearchAction ($timeout) {
     return {
@@ -16,7 +16,7 @@ define(['interface'], function (__interface__) {
     };
   }
 
-  __interface__
+  angularAMD
 
     .directive('ngSearchAction', [
       '$timeout',
