@@ -16,7 +16,6 @@
     </ul>
 
     <ul class="columns">
-      <li>Search</li>
       <li>
         <a ng-click="login();">
           Connect
@@ -33,6 +32,37 @@
   </div>
 
   <div class="list">
+
+    <div class="resources-explorer">
+      <form
+        ng-search-action
+        action=""
+        itemprop="potentialAction"
+        itemscope
+        itemtype="http://schema.org/SearchAction"
+      >
+
+        <md-input-container>
+          <label for="resourcesExplorer.searchAction">Search</label>
+          <meta
+            itemprop="target"
+            content="http://ourpangea.com/search?q={query}"
+          />
+          <input
+            id="resourcesExplorer.searchAction"
+            itemprop="query-input"
+            ng-model="SearchAction.queryInput"
+            type="text"
+            name="query"
+          />
+        </md-input-container>
+
+        <md-button
+          ng-disabled="true"
+          class="md-primary"
+        >Search</md-button>
+      </form>
+    </div>
 
     <leaflet
       lf-center="center"

@@ -6,6 +6,7 @@
  */
 
 define([
+  'directives/SearchAction',
   function () {
 
     function HomeCtrl ($scope, leafletData) {

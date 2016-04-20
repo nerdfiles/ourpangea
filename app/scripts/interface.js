@@ -1,6 +1,15 @@
+/**
+ * @ngdoc function
+ * @name ourpangea.interface
+ * @description
+ * Basic interface for OurPangea.
+ */
+
 define([
   "angularAMD",
-  "routes".
+  "routes/setup",
+  "routes/authenticate",
+  "routes/initialize",
   "angular-route",
   "angular-animate",
   "angular-cookies",
@@ -8,10 +17,13 @@ define([
   "angular-sanitize",
   "angular-touch",
   "angular-leaflet-directive",
-  "leaflet"
-], function (angularAMD, routes) {
+  "leaflet",
+  "directives/ngHideAuth",
+  "directives/ngShowAuth",
+  "directives/ngSearchAction"
+], function (angularAMD, setup, authenticate, initialize) {
 
-  var app = angular.module("ourpangea", [
+  var __interface__ = angular.module("ourPangea", [
     "ngRoute",
     "ngAnimate",
     'ngAria',
@@ -26,17 +38,32 @@ define([
     'firebase.auth'
   ]);
 
-  app.config([
+  __interface__.config([
     '$routeProvider',
     '$locationProvider',
-    routes
-  ]);
+    setup
+  ])
+
+  .config([
+    '$routeProvider',
+    'SECURED_ROUTES',
+    authenticate
+  ])
+
+  .run([
+    '$rootScope',
+    '$location',
+    'Auth',
+    'SECURED_ROUTES',
+    'loginRedirectPath',
+    initialize
+  ])
 
   // @TODO
   // auth
   // config
   // firebase.ref
 
-  return angularAMD.bootstrap(app);
+  return angularAMD.bootstrap(__interface__);
 
 });
