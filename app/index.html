@@ -1,20 +1,32 @@
 <!doctype html>
-<html >
+<html class="no-js" lang="en">
+
 <head>
-  <meta charset="utf-8">
+
+  <meta charset="utf-8" />
   <title></title>
-  <meta name="description" content="">
+  <meta name="description" content="" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="scripts/ext/leaflet.css" />
-  <link rel="stylesheet" href="styles/main.css" />
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css" >
+  <!-- endbuild --> 
   <script data-main="scripts/main.js" src="scripts/ext/require.js"></script>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
 </head>
-<body class="WebPage">
+
+<body ng-class="WebPage">
+
 
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
+
 
 <div ng-view></div>
 
@@ -35,10 +47,18 @@
 <script src="json3/lib/json3.js"></script>
 <![endif]-->
 
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<!-- endbuild -->
+
 <!-- @exclude -->
 <script type="text/javascript" src="http://localhost:8080/livereload.js?snipver=1"></script>
 <!-- @endexclude -->
-
 
 </body>
 </html>

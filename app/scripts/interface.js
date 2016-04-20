@@ -1,5 +1,6 @@
 define([
   "angularAMD",
+  "routes".
   "angular-route",
   "angular-animate",
   "angular-cookies",
@@ -8,30 +9,33 @@ define([
   "angular-touch",
   "angular-leaflet-directive",
   "leaflet"
-], function (angularAMD) {
+], function (angularAMD, routes) {
 
   var app = angular.module("ourpangea", [
     "ngRoute",
     "ngAnimate",
+    'ngAria',
     "ngCookies",
+    'ngMessages',
     "ngResource",
     "ngSanitize",
     "ngTouch",
-    "leaflet-directive"
+    "leaflet-directive",
+    'firebase',
+    'firebase.ref',
+    'firebase.auth'
   ]);
 
-  app.config(['$routeProvider', function ($routeProvider) {
+  app.config([
+    '$routeProvider',
+    '$locationProvider',
+    routes
+  ]);
 
-    $routeProvider
-
-      .when("/home", angularAMD.route({
-        templateUrl   : 'views/home.html',
-        controllerUrl : 'controller/home_ctrl'
-      }))
-
-      .otherwise({redirectTo: "/home"});
-
-  }]);
+  // @TODO
+  // auth
+  // config
+  // firebase.ref
 
   return angularAMD.bootstrap(app);
 

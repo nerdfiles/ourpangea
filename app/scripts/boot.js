@@ -13,6 +13,12 @@ require.config({
     "angular-touch"             : "ext/angular-touch",
     "leaflet"                   : "ext/leaflet",
     "angular-leaflet-directive" : "ext/angular-leaflet-directive.min",
+
+    "directives/ngHideAuth" : "directives/ngHideAuth",
+    "directives/ngShowAuth" : "directives/ngShowAuth"
+    "filters/reverse"       : "filters/reverse"
+
+    // @TODO firebase, etc.
   },
 
   shim: {
@@ -55,6 +61,6 @@ require.config({
     ]
   },
 
-  deps: ['app']
+  deps: ['interface']
 
 });
