@@ -12,7 +12,7 @@ require.config({
     "angular-sanitize"          : "ext/angular-sanitize",
     "angular-touch"             : "ext/angular-touch",
     "leaflet"                   : "ext/leaflet",
-    "angular-leaflet-directive" : "ext/dist/angular-leaflet-directive.min",
+    "angular-leaflet-directive" : "ext/angular-leaflet-directive.min",
   },
 
   shim: {

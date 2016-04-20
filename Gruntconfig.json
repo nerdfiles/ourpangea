@@ -22,7 +22,8 @@
     "angular-resource/angular-resource.js",
     "angular-sanitize/angular-sanitize.js",
     "angular-touch/angular-touch.js",
-    "leaflet/leatlet.js",
+    "leaflet/dist/leaflet.css",
+    "leaflet/dist/leaflet.js",
     "angular-leaflet-directive/dist/angular-leaflet-directive.min.js"
   ],
 

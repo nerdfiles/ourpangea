@@ -1,13 +1,14 @@
 define([
   'leaflet',
   'angular-leaflet-directive',
-  function () {
+  function (leaflet) {
     return [
       '$scope',
+      'leafletData'
       //'services/topics',
       //'services/photos',
       //'services/events',
-      function ($scope) {
+      function ($scope, leafletData) {
         $scope.message = 'OurPangea';
         $scope.loadTopics = function () {
         };
@@ -25,6 +26,11 @@ define([
         });
 
       }
+
+      leafletData.getMap().then(function(map) {
+          /*new L.Marker([0,0]).addTo(map);*/
+      });
+
     ];
   }
 ]);
