@@ -9,14 +9,19 @@ define([
       //'services/photos',
       //'services/events',
       function ($scope, leafletData) {
+
         $scope.message = 'OurPangea';
         $scope.loadTopics = function () {
         };
         $scope.loadPhotos = function () {
         };
         $scope.loadEvents = function () {
-
         };
+
+        $scope.WebPage = {
+          'page--home': true
+        };
+
         angular.extend($scope, {
           center: {
             lat: 51.505,
