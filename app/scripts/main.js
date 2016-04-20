@@ -21,7 +21,7 @@ require.config({
         "angular"
       ],
       "exports": "L"
-    }
+    },
     "angular-leaflet-directive": [
       "angular",
       "leaflet"
