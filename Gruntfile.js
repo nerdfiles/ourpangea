@@ -1,18 +1,10 @@
-// Gruntfile
-
 module.exports = function (grunt) {
   'use strict';
 
   require('load-grunt-tasks')(grunt);
 
-  /**
-   * Define Configuration Variables.
-   * Note: cwd is './setup' so the `setup` variable defined below is only to be used
-   *       when cwd has been changed to `app` and grunt needs to reference './setup'
-   */
   var gruntConfig = grunt.file.readJSON('Gruntconfig.json');
 
-  // Grunt Config
   grunt.initConfig({
     cvars: gruntConfig.configVars,
     bower: {
@@ -23,13 +15,11 @@ module.exports = function (grunt) {
     copy: {
       setup: {
         files: [
-          // Javascript with standard .min.js naming convention
           {
             cwd: 'bower_components', expand: true, flatten: true,
             dest: '<%= cvars.app %>/<%= cvars.appjs %>/ext/',
             src: gruntConfig.bowerFiles
           },
-          // CSS with standard .min.css naming convention
           {
             cwd: 'bower_components', expand: true, flatten: true,
             dest: '<%= cvars.app %>/<%= cvars.appcss %>/ext/',
@@ -80,17 +70,13 @@ module.exports = function (grunt) {
       }
     },
     htmlmin: {
-      // See https://github.com/yeoman/grunt-usemin/issues/44 for using 2 passes
       build: {
         options: {
           removeComments: true,
-          // https://github.com/yeoman/grunt-usemin/issues/44
-          //collapseWhitespace: true,
           collapseBooleanAttributes: true,
           removeAttributeQuotes: true,
           removeRedundantAttributes: true,
           removeEmptyAttributes: true,
-          // Cannot remove empty elements with angular directives
           removeEmptyElements: false
         },
         files: [
@@ -217,25 +203,13 @@ module.exports = function (grunt) {
   });
 
 
-  /**
-   * setup task
-   * Run the initial setup, sourcing all needed upstream dependencies
-   */
   grunt.registerTask('setup', ['bower:setup', 'copy:setup']);
 
 
-  /**
-   * devel task
-   * Launch webserver and watch for changes
-   */
   grunt.registerTask('devel', [
     'connect:server', 'watch:www'
   ]);
 
-  /**
-   * build task
-   * Use r.js to build the project
-   */
   grunt.registerTask('build', [
     'jshint:build',
     'clean:build',
@@ -247,10 +221,6 @@ module.exports = function (grunt) {
   ]);
 
 
-  /**
-   * deploy task
-   * Deploy to dist_www directory
-   */
   grunt.registerTask('deploy', [
     'build',
     'clean:deploy',
@@ -258,9 +228,5 @@ module.exports = function (grunt) {
     'uglify:deploy',
     'copy:deploy'
   ]);
-
-  grunt.registerTask('hello', function () {
-    grunt.log.write('hello task called with: ', gruntConfig);
-  });
 
 };
