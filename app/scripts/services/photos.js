@@ -1,7 +1,7 @@
 define(['interface'], function (__interface__) {
   __interface__.service('photos', [
     '$http',
-    function photosService () {
+    function photosService ($http) {
       var serviceInterface = {};
       serviceInterface.getPhotos = function () {
       };
