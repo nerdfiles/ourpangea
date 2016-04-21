@@ -1,16 +1,27 @@
 define(['interface'], function (__interface__) {
+
   __interface__.service('events', [
-    var serviceInterface = {};
-    serviceInterface.getEvents = function () {
-    };
-    serviceInterface.addEvents = function () {
-    };
-    serviceInterface.updateEvents = function () {
-    };
-    serviceInterface.removeEvents = function () {
-    };
+    '$http',
+    function eventsService ($http) {
 
+      var serviceInterface = {};
 
-    return serviceInterface;
+      serviceInterface.getEvents = function () {
+        /// @description
+      };
+      serviceInterface.addEvents = function () {
+
+        /// @description
+      };
+      serviceInterface.updateEvents = function () {
+        /// @description
+      };
+      serviceInterface.removeEvents = function () {
+        /// @description
+      };
+
+      return serviceInterface;
+
+    }
   ]);
-})
+});
