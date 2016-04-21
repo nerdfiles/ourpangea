@@ -17,7 +17,7 @@ define([], function () {
 
     $routeProvider
 
-      .when('/home', {
+      .when('/', {
         templateUrl: 'views/home.html',
         controllerUrl: 'controller/home'
       })
@@ -37,7 +37,7 @@ define([], function () {
         controllerUrl: 'controller/account'
       })
 
-      .otherwise({redirectTo: '/home'});
+      .otherwise({redirectTo: '/'});
 
   };
 

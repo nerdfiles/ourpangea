@@ -1,6 +1,5 @@
 require.config({
   baseUrl: "scripts/",
-
   paths: {
     "angular"                   : "ext/angular",
     "angular-route"             : "ext/angular-route",
@@ -11,6 +10,9 @@ require.config({
     "angular-resource"          : "ext/angular-resource",
     "angular-sanitize"          : "ext/angular-sanitize",
     "angular-touch"             : "ext/angular-touch",
+    "angular-aria"              : "ext/angular-aria",
+    "angular-messages"          : "ext/angular-messages",
+    "angular-material"          : "ext/angular-material",
     "leaflet"                   : "ext/leaflet",
     "angular-leaflet-directive" : "ext/angular-leaflet-directive.min",
 
@@ -22,7 +24,9 @@ require.config({
 
     "routes/setup"              : "routes/setup",
     "routes/authenticate"       : "routes/authenticate",
-    "routes/initialize"         : "routes/initialize"
+    "routes/initialize"         : "routes/initialize",
+    "firebase"                  : "ext/firebase",
+    "angularfire"               : "ext/angularfire"
 
     // @TODO firebase, etc.
   },
@@ -34,14 +38,31 @@ require.config({
       ],
       "exports": "L"
     },
+    "lodash": {
+      "exports": "_"
+    },
+    "angular": {
+      "exports": "angular"
+    },
+    "angular-material": [
+      'angular'
+    ],
+    "angularfire": [
+      "angular",
+      "firebase"
+    ],
     "angular-leaflet-directive": [
+
       "angular",
       "leaflet"
     ],
-    "angular-leaflet-directive": [
+    "angular-route": [
         "angular"
     ],
-    "angular-route": [
+    "angular-aria": [
+        "angular"
+    ],
+    "angular-messages": [
         "angular"
     ],
     "angularAMD": [

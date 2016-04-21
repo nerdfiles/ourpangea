@@ -30,7 +30,8 @@
     "leaflet/dist/leaflet.css",
     "leaflet/dist/leaflet.js",
     "angular-leaflet-directive/dist/angular-leaflet-directive.min.js",
-    "firebase/firebase.js"
+    "firebase/firebase.js",
+    "angularfire/dist/angularfire.js"
   ],
 
   "cssFiles": [],

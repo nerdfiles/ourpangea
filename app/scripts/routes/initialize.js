@@ -6,6 +6,15 @@
  */
 define([], function () {
   return function($rootScope, $location, Auth, SECURED_ROUTES, loginRedirectPath) {
+
+    angular.extend($rootScope, {
+      center: {
+        lat: 51.505,
+        lng: -0.09,
+        zoom: 8
+      }
+    });
+
     Auth.$onAuth(check);
 
     $rootScope.$on('$routeChangeError', function(e, next, prev, err) {
