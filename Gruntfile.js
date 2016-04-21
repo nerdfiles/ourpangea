@@ -323,7 +323,9 @@ module.exports = function (grunt) {
           '<%= yeoman.app %>/styles/{,*/}*.{scss,sass}',
           '<%= cvars.app %>/**/*'
         ],
-        tasks: [],
+        tasks: [
+          'compass'
+        ],
         options: {
           spawn: false,
           livereload: true

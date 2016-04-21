@@ -29,6 +29,9 @@
 @import "organs/_rhizome";
 @import "organs/_syzygy";
 
+@import "tissues/_stream";
+@import "tissues/_list";
+
 // bower:scss
 // endbower
 
@@ -56,13 +59,9 @@ h1 { }
 .list .columns {}
 
 .explorer {}
+
 .world {}
 
 .streams {
-  display: flex;
+  @include streams();
 }
-.streams .columns {
-  width: 33%;
-}
-.streams { }
-

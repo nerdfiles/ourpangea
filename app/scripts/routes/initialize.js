@@ -5,7 +5,7 @@
  * Init.
  */
 define([], function () {
-  return function($rootScope, $location, Auth, SECURED_ROUTES, loginRedirectPath) {
+  return function($rootScope, $location, Auth, SECURED_ROUTES, loginRedirectPath, $window) {
 
     angular.extend($rootScope, {
       center: {
@@ -14,6 +14,11 @@ define([], function () {
         zoom: 8
       }
     });
+
+    $rootScope.worldViewConstruct = {
+      //generatedHeight : $window.innerHeight,
+      generatedWidth  : $window.innerWidth
+    };
 
     Auth.$onAuth(check);
 

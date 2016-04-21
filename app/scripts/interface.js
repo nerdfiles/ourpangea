@@ -70,6 +70,7 @@ define([
       'Auth',
       'SECURED_ROUTES',
       'loginRedirectPath',
+      '$window',
       initialize
     ]);
 

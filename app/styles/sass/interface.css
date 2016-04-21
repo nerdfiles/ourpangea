@@ -465,44 +465,60 @@ footer, .content {
 
 /* @usage .page .header */
 /*@import "organs/_directory";*/
+/* line 2, tissues/_list.scss */
+.streams {
+  display: flex;
+}
+/* line 5, tissues/_list.scss */
+.streams div.columns {
+  width: 33%;
+}
+/* line 9, tissues/_list.scss */
+.streams ul {
+  list-style: none;
+}
+
 /*** ==========================================================================
 
 ***/
-/* line 39, interface.scss */
+/* line 42, interface.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 40, interface.scss */
+/* line 43, interface.scss */
 body {
   font-family: 'Open Sans';
 }
 
-/* line 44, interface.scss */
+/* line 47, interface.scss */
 .container {
   display: flex;
   width: 100%;
 }
 
-/* line 48, interface.scss */
+/* line 51, interface.scss */
 .sidebar {
   background-color: #76E4B5;
   width: 20%;
 }
 
-/* line 52, interface.scss */
+/* line 55, interface.scss */
 .list {
   background-color: #D6BC7A;
   width: 80%;
 }
 
-/* line 61, interface.scss */
+/* line 2, tissues/_list.scss */
 .streams {
   display: flex;
 }
-
-/* line 64, interface.scss */
-.streams .columns {
+/* line 5, tissues/_list.scss */
+.streams div.columns {
   width: 33%;
+}
+/* line 9, tissues/_list.scss */
+.streams ul {
+  list-style: none;
 }
