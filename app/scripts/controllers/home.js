@@ -23,14 +23,6 @@ define([
         'page--home': true
       };
 
-      angular.extend($scope, {
-        center: {
-          lat: 51.505,
-          lng: -0.09,
-          zoom: 8
-        }
-      });
-
       leafletData.getMap().then(function(map) {
         /*new L.Marker([0,0]).addTo(map);*/
       });

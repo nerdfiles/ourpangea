@@ -14,16 +14,20 @@ define([
   "angular-animate",
   "angular-cookies",
   "angular-resource",
+  "angular-aria",
+  "angular-messages",
   "angular-sanitize",
   "angular-touch",
   "angular-leaflet-directive",
   "leaflet",
   "directives/ngHideAuth",
   "directives/ngShowAuth",
-  "directives/ngSearchAction"
+  "directives/ngSearchAction",
+  "angularfire"
 ], function (angularAMD, setup, authenticate, initialize) {
 
   var __interface__ = angular.module("ourPangea", [
+    "firebase",
     "ngRoute",
     "ngAnimate",
     'ngAria',
@@ -33,38 +37,46 @@ define([
     "ngSanitize",
     "ngTouch",
     "leaflet-directive",
-    'firebase',
-    'firebase.ref',
-    'firebase.auth'
   ]);
 
   __interface__
 
-  .config([
-    '$routeProvider',
-    '$locationProvider',
-    setup
-  ])
+    .constant('SECURED_ROUTES', {})
+    .constant('FBURL', 'https://ourpangea.firebaseio.com')
+    .constant('SIMPLE_LOGIN_PROVIDERS', ['facebook'])
+    .constant('loginRedirectPath', '/login')
+    .factory('Ref', ['$window', 'FBURL', function($window, FBURL) {
+      return new $window.Firebase(FBURL);
+    }])
+    .factory('Auth', function ($firebaseAuth, Ref) {
+      return $firebaseAuth(Ref);
+    })
 
-  .config([
-    '$routeProvider',
-    'SECURED_ROUTES',
-    authenticate
-  ])
+    .config([
+      '$routeProvider',
+      'SECURED_ROUTES',
+      authenticate
+    ])
 
-  .run([
-    '$rootScope',
-    '$location',
-    'Auth',
-    'SECURED_ROUTES',
-    'loginRedirectPath',
-    initialize
-  ])
+    .config([
+      '$routeProvider',
+      '$locationProvider',
+      setup
+    ])
 
-  // @TODO
-  // auth
-  // config
-  // firebase.ref
+    .run([
+      '$rootScope',
+      '$location',
+      'Auth',
+      'SECURED_ROUTES',
+      'loginRedirectPath',
+      initialize
+    ]);
+
+    // @TODO
+    // auth
+    // config
+    // firebase.ref
 
   return angularAMD.bootstrap(__interface__);
 
