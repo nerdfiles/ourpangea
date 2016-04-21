@@ -63,7 +63,7 @@ module.exports = function (grunt) {
             src: gruntConfig.bowerFiles
           },
           {
-            cwd: 'bower_components', expand: true, flatten: true,
+            cwd: 'bower_components', expand: true, flatten: false,
             dest: '<%= cvars.app %>/<%= cvars.appcss %>/ext/',
             src: gruntConfig.cssFiles
           }
@@ -319,7 +319,10 @@ module.exports = function (grunt) {
 
     watch: {
       www: {
-        files: ['<%= cvars.app %>/**/*'],
+        files: [
+          '<%= yeoman.app %>/styles/{,*/}*.{scss,sass}',
+          '<%= cvars.app %>/**/*'
+        ],
         tasks: [],
         options: {
           spawn: false,
