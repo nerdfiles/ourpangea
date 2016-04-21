@@ -33,7 +33,19 @@
 
   <div class="list">
 
-    <div class="resources-explorer">
+    <!--
+
+                       _
+                      | |
+     _____ _   _ ____ | | ___   ____ _____  ____
+    | ___ ( \ / )  _ \| |/ _ \ / ___) ___ |/ ___)
+    | ____|) X (| |_| | | |_| | |   | ____| |
+    |_____|_/ \_)  __/ \_)___/|_|   |_____)_|
+                |_|
+
+    -->
+
+    <div class="explorer">
       <form
         ng-search-action
         action=""
@@ -64,45 +76,69 @@
       </form>
     </div>
 
-    <leaflet
-      lf-center="center"
-      height="480px"
-      width="640px"
-    ></leaflet>
+    <!--
 
-    <div class="columns">
-      <h2>Topics</h2>
-      <ul>
-        <li>Topic 1</li>
-        <li>Topic 1</li>
-        <li>Topic 1</li>
-        <li>Topic 1</li>
-        <li>Topic 1</li>
-      </ul>
+                       _     _
+                      | |   | |
+     _ _ _  ___   ____| | __| |
+    | | | |/ _ \ / ___) |/ _  |
+    | | | | |_| | |   | ( (_| |
+     \___/ \___/|_|    \_)____|
+
+    -->
+
+    <div class="world">
+      <leaflet
+        lf-center="center"
+        height="480px"
+        width="640px"
+      ></leaflet>
     </div>
 
-    <div class="columns">
-      <h2>Photos</h2>
-      <ul>
-        <li>Photo 1</li>
-        <li>Photo 2</li>
-        <li>Photo 3</li>
-        <li>Photo 4</li>
-        <li>Photo 5</li>
-      </ul>
-    </div>
+    <!--
 
-    <div class="columns">
-      <h2>Events</h2>
-      <ul>
-        <li>Event 1</li>
-        <li>Event 2</li>
-        <li>Event 3</li>
-        <li>Event 4</li>
-        <li>Event 5</li>
-      </ul>
+            _
+      ___ _| |_  ____ _____ _____ ____   ___
+     /___|_   _)/ ___) ___ (____ |    \ /___)
+    |___ | | |_| |   | ____/ ___ | | | |___ |
+    (___/   \__)_|   |_____)_____|_|_|_(___/
+
+    -->
+
+    <div class="streams">
+      <div class="columns">
+        <h2>Topics</h2>
+        <ul>
+          <li>Topic 1</li>
+          <li>Topic 1</li>
+          <li>Topic 1</li>
+          <li>Topic 1</li>
+          <li>Topic 1</li>
+        </ul>
+      </div>
+
+      <div class="columns">
+        <h2>Photos</h2>
+        <ul>
+          <li>Photo 1</li>
+          <li>Photo 2</li>
+          <li>Photo 3</li>
+          <li>Photo 4</li>
+          <li>Photo 5</li>
+        </ul>
+      </div>
+
+      <div class="columns">
+        <h2>Events</h2>
+        <ul>
+          <li>Event 1</li>
+          <li>Event 2</li>
+          <li>Event 3</li>
+          <li>Event 4</li>
+          <li>Event 5</li>
+        </ul>
+      </div>
     </div>
 
   </div>
-
 </div>
