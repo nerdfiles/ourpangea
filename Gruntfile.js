@@ -6,7 +6,12 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
 
   var gruntConfig = grunt.file.readJSON('Gruntconfig.json');
-  var appConfig = gruntConfig.configVars;
+
+  var appConfig = {
+    app: require('./bower.json').appPath || 'app',
+    dist: 'dist'
+  };
+
 
   grunt.initConfig({
 
@@ -416,7 +421,7 @@ module.exports = function (grunt) {
     compass: {
       options: {
         sassDir: '<%= yeoman.app %>/styles',
-        cssDir: '.tmp/styles',
+        cssDir: '<%= yeoman.app %>/styles',
         generatedImagesDir: '.tmp/images/generated',
         imagesDir: '<%= yeoman.app %>/images',
         javascriptsDir: '<%= yeoman.app %>/scripts',

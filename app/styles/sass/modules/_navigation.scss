@@ -1,0 +1,19 @@
+$module: 'navigation';
+.#{$module} {
+
+  &__item {
+    border-top: 1px solid #ccc;
+  }
+
+  &__link {
+    color: blue;
+  }
+
+  &--sub {
+    margin-left: 15px;
+    .#{$module}__link {
+      font-weight: 600;
+    }
+  }
+}
+

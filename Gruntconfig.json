@@ -34,7 +34,15 @@
     "angularfire/dist/angularfire.js"
   ],
 
-  "cssFiles": [],
+  "cssFiles": [
+    "organic-css/src/atoms/*",
+    "organic-css/src/molecules/_reset.scss",
+    "organic-css/example/sass/atoms/*.scss",
+    "organic-css/example/sass/molecules/*.scss",
+    "organic-css/example/sass/organelles/*.scss",
+    "organic-css/src/common.scss",
+    "organic-css/src/main.scss"
+  ],
 
   "buildFiles": [
     "images/**"

@@ -1,0 +1,20 @@
+/***
+@description
+Like a plat but regular.
+***/
+%slat {
+  font-size: 0.1px;
+  text-align: justify;
+
+  &:after {
+    display: inline-block;
+    content: '';
+    width: 100%;
+  }
+
+  > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+  }
+}
