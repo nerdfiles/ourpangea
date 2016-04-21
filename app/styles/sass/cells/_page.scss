@@ -1,0 +1,11 @@
+/* @usage .page .header */
+
+@mixin page ($type:"") {
+  & {
+    .#{$type},
+    [class^="#{$type}"],
+    [class*=" #{$type}"] {
+      @extend .#{$type};
+    }
+  }
+}
