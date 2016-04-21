@@ -4,3 +4,4 @@ bower_components/
 ext
 node_modules/
 app/styles/css/
+.DS_Store
