@@ -25,6 +25,8 @@ require.config({
     "routes/setup"              : "routes/setup",
     "routes/authenticate"       : "routes/authenticate",
     "routes/initialize"         : "routes/initialize",
+    "routes/secured"            : "routes/secured",
+
     "firebase"                  : "ext/firebase",
     "angularfire"               : "ext/angularfire"
 
