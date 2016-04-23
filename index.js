@@ -4,8 +4,9 @@ var http = require('http');
 var app = express();
 var server = http.createServer(app);
 var path = require('path');
+var port = process.env['PORT'] || 3000;
 
-server.listen(3000);
+server.listen(port);
 
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
