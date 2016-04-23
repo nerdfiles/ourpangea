@@ -17,7 +17,7 @@ define([], function () {
 
     $rootScope.worldViewConstruct = {
       //generatedHeight : $window.innerHeight,
-      generatedWidth  : $window.innerWidth
+      generatedWidth  : $window.innerWidth - ($window.innerWidth * .2)
     };
 
     Auth.$onAuth(check);
