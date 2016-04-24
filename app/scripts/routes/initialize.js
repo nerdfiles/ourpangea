@@ -5,7 +5,7 @@
  * Init.
  */
 define([], function () {
-  return function($rootScope, $location, Auth, SECURED_ROUTES, loginRedirectPath, $window) {
+  return function($rootScope, $location, Auth, SECURED_ROUTES, loginRedirectPath, $window, segment) {
 
     angular.extend($rootScope, {
       center: {
@@ -15,8 +15,11 @@ define([], function () {
       }
     });
 
+    $rootScope.$on('$routeChangeSuccess', function () {
+      segment.page();
+    });
+
     $rootScope.worldViewConstruct = {
-      //generatedHeight : $window.innerHeight,
       generatedWidth  : $window.innerWidth - ($window.innerWidth * .2)
     };
 

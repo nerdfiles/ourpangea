@@ -36,7 +36,8 @@ require.config({
     "firebase"                  : "ext/firebase",
     "angularfire"               : "ext/angularfire.min",
 
-    "ramda"                     : "ext/ramda.min"
+    "ramda"                     : "ext/ramda.min",
+    "segment"                   : "ext/segment.min"
   },
 
   shim: {
@@ -49,6 +50,7 @@ require.config({
     "angular": {
       "exports": "angular"
     },
+    "segment": ["angular"],
     "angular-material": [
       'angular'
     ],
