@@ -1,3 +1,7 @@
+/***
+ * @fileOverview ./test/karma.config.js
+ * @description
+ */
 module.exports = function(config) {
   'use strict';
 

@@ -19,6 +19,7 @@ define([
   "angular-messages",
   "angular-sanitize",
   "angular-touch",
+  "angular-material",
   "angular-leaflet-directive",
   "leaflet",
   "directives/ngHideAuth",
@@ -37,6 +38,7 @@ define([
     "ngResource",
     "ngSanitize",
     "ngTouch",
+    "ngMaterial",
     "leaflet-directive",
   ]);
 

@@ -1,6 +1,6 @@
 /**
  * @ngdoc function
- * @name ourpangea.run
+ * @name ourpangea:routes.initialize
  * @description
  * Init.
  */
