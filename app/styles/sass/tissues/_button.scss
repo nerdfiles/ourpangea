@@ -1,0 +1,44 @@
+// Define placeholder
+@mixin define($key, $value) {
+    %#{$key} {
+        @include rules($value);
+    }
+}
+
+// Define hover styles
+@mixin hover($key, $value) {
+    &:hover {
+        @include rules($value);
+    }
+}
+
+// Print rule
+@mixin rule($key, $value) {
+    #{$key} : $value;
+}
+
+// Print rules
+@mixin rules($name, $rules) {
+    @each $key, $value in $rules {
+        @if(str-index($key, '_') == 1) {
+            //@include #{str-slice($key, 2)}($name, $value);
+        } @else if(type-of($value) == "map") {
+            @include rules($name + '-' + $key, $value);
+        } @else {
+            @include rule($key, $value);
+        }
+    }
+}
+
+// Define component
+@include rules('button', (
+    _define : (
+        background : #fff,
+        color : #111,
+        padding : 0.5em 1em,
+        border-width : 1px,
+        _hover : (
+            background : #eee,
+        )
+    ),
+));

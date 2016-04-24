@@ -1,0 +1,69 @@
+// organic css
+@import "../ext/organic-css/src/main";
+@import "../ext/organic-css/src/molecules/_reset";
+
+// custom
+@import "../ext/organic-css/example/sass/atoms/_atoms";
+@import "../ext/organic-css/example/sass/molecules/_body";
+/*@import "../ext/organic-css/example/sass/molecules/_container";*/
+@import "../ext/organic-css/example/sass/molecules/_header";
+@import "../ext/organic-css/example/sass/molecules/_content";
+@import "../ext/organic-css/example/sass/molecules/_big-title";
+@import "../ext/organic-css/example/sass/molecules/_footer";
+@import "../ext/organic-css/example/sass/organelles/_organelles";
+
+@import "cells/_page";
+@import "tissues/_journal";
+
+@import "organs/_absolute";
+@import "organs/_anomaly";
+@import "organs/_antinomy";
+@import "organs/_branch";
+@import "organs/_clinamen";
+@import "organs/_dict";
+/*@import "organs/_directory";*/
+@import "organs/_homograph";
+@import "organs/_isotype";
+@import "organs/_menu";
+@import "organs/_pataphor";
+@import "organs/_rhizome";
+@import "organs/_syzygy";
+
+@import "tissues/_stream";
+@import "tissues/_list";
+
+// bower:scss
+// endbower
+
+/*** ==========================================================================
+
+***/
+
+* { margin: 0; padding: 0; }
+body { font-family: 'Open Sans'; }
+
+h1 { }
+
+.container {
+  display: flex;
+  width: 100%; }
+
+.sidebar {
+  background-color: #76E4B5;
+  width: 20%;
+}
+
+.list {
+  background-color: #D6BC7A;
+  width: 80%;
+}
+
+.list .columns {}
+
+.explorer {}
+
+.world {}
+
+.streams {
+  @include streams();
+}

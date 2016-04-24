@@ -1,0 +1,524 @@
+@charset "UTF-8";
+/* line 1, ../ext/organic-css/src/atoms/_display.scss */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr, footer, .header a, .journal .header a,
+.journal [class^="header"] a,
+.journal [class*=" header"] a, .header h1 small, .journal .header h1 small,
+.journal [class^="header"] h1 small,
+.journal [class*=" header"] h1 small, .content .content-column-left, .content .content-column-right {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, ../ext/organic-css/src/atoms/_display.scss */
+.content h3:before {
+  display: inline-block;
+}
+
+/* line 1, ../ext/organic-css/src/atoms/_text.scss */
+.header h1, .journal .header h1,
+.journal [class^="header"] h1,
+.journal [class*=" header"] h1, .header h2, .journal .header h2,
+.journal [class^="header"] h2,
+.journal [class*=" header"] h2, .big-title, .content h3, .content p, .content pre, .content ul {
+  font-weight: normal;
+}
+
+/* line 4, ../ext/organic-css/src/atoms/_text.scss */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr, .header h1 small, .journal .header h1 small,
+.journal [class^="header"] h1 small,
+.journal [class*=" header"] h1 small, .content h4 {
+  font-weight: bold;
+}
+
+/* line 7, ../ext/organic-css/src/atoms/_text.scss */
+.content .content-column-left {
+  font-style: italic;
+}
+
+/* line 10, ../ext/organic-css/src/atoms/_text.scss */
+a {
+  text-decoration: underline;
+}
+
+/* line 13, ../ext/organic-css/src/atoms/_text.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 34, ../ext/organic-css/src/atoms/_text.scss */
+footer, .header h1, .journal .header h1,
+.journal [class^="header"] h1,
+.journal [class*=" header"] h1, .header h2, .journal .header h2,
+.journal [class^="header"] h2,
+.journal [class*=" header"] h2, .big-title {
+  text-align: center;
+}
+
+/* line 37, ../ext/organic-css/src/atoms/_text.scss */
+.content h3, .content h3:before {
+  font-style: normal;
+}
+
+/* line 40, ../ext/organic-css/src/atoms/_text.scss */
+.content pre {
+  word-wrap: break-word;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+body, .header a, .journal .header a,
+.journal [class^="header"] a,
+.journal [class*=" header"] a, .header h1 small, .journal .header h1 small,
+.journal [class^="header"] h1 small,
+.journal [class*=" header"] h1 small, .content pre {
+  font-size: 14px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+body, .content .content-column-left, .content .content-column-right {
+  font-size: 16px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content h3:before {
+  font-size: 20px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content h3 {
+  font-size: 34px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.header h1, .journal .header h1,
+.journal [class^="header"] h1,
+.journal [class*=" header"] h1 {
+  font-size: 50px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.big-title {
+  font-size: 80px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.header h1 small, .journal .header h1 small,
+.journal [class^="header"] h1 small,
+.journal [class*=" header"] h1 small {
+  line-height: 18px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content pre {
+  line-height: 20px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+body {
+  line-height: 22px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content .content-column-left, .content .content-column-right {
+  line-height: 26px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+body {
+  line-height: 28px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content h3 {
+  line-height: 30px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.header h1, .journal .header h1,
+.journal [class^="header"] h1,
+.journal [class*=" header"] h1 {
+  line-height: 50px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.big-title {
+  line-height: 80px;
+}
+
+/* line 2, ../ext/organic-css/src/atoms/_clearfix.scss */
+.header:after, .journal .header:after,
+.journal [class^="header"]:after,
+.journal [class*=" header"]:after, .content:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* line 9, ../ext/organic-css/src/atoms/_widths.scss */
+.header h1, .journal .header h1,
+.journal [class^="header"] h1,
+.journal [class*=" header"] h1, .header h2, .journal .header h2,
+.journal [class^="header"] h2,
+.journal [class*=" header"] h2, .content .content-column-left {
+  width: 33.333%;
+}
+
+/* line 10, ../ext/organic-css/src/atoms/_widths.scss */
+.content .content-column-right {
+  width: 66.666%;
+}
+
+/* line 4, ../ext/organic-css/src/atoms/_floats.scss */
+.header h1, .journal .header h1,
+.journal [class^="header"] h1,
+.journal [class*=" header"] h1, .header h2, .journal .header h2,
+.journal [class^="header"] h2,
+.journal [class*=" header"] h2, .content .content-column-left, .content .content-column-right {
+  float: left;
+}
+
+/* line 2, ../ext/organic-css/src/atoms/_box-model.scss */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr {
+  margin: 0;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content pre {
+  margin-top: 6px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content h4:nth-of-type(n+2) {
+  margin-top: 20px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+footer, .content {
+  margin-top: 40px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content pre {
+  margin-bottom: 6px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content h3 {
+  margin-bottom: 10px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.header, .journal .header,
+.journal [class^="header"],
+.journal [class*=" header"] {
+  margin-bottom: 20px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.big-title {
+  margin-bottom: 30px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+footer {
+  margin-bottom: 40px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content ul {
+  margin-left: 22px;
+}
+
+/* line 11, ../ext/organic-css/src/atoms/_box-model.scss */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr {
+  padding: 0;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content pre {
+  padding-top: 10px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+footer {
+  padding-top: 20px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content {
+  padding-top: 30px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.header, .journal .header,
+.journal [class^="header"],
+.journal [class*=" header"] {
+  padding-top: 40px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content h3:before {
+  padding-right: 12px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content .content-column-left, .content pre {
+  padding-right: 20px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content pre {
+  padding-bottom: 10px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.header, .journal .header,
+.journal [class^="header"],
+.journal [class*=" header"] {
+  padding-bottom: 40px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.header h2, .journal .header h2,
+.journal [class^="header"] h2,
+.journal [class*=" header"] h2, .content .content-column-right, .content pre {
+  padding-left: 20px;
+}
+
+/* line 14, ../ext/organic-css/src/common.scss */
+.content pre {
+  border-radius: 8px;
+}
+
+/* line 11, ../ext/organic-css/src/atoms/_sizes.scss */
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1, ../ext/organic-css/src/atoms/_colors.scss */
+a, .content h3, .content pre {
+  color: #000;
+}
+
+/* line 9, ../ext/organic-css/src/atoms/_effects.scss */
+.header h1 small, .journal .header h1 small,
+.journal [class^="header"] h1 small,
+.journal [class*=" header"] h1 small {
+  text-shadow: none;
+}
+
+/* line 21, ../ext/organic-css/src/common.scss */
+body {
+  font-family: Georgia;
+}
+
+/* line 21, ../ext/organic-css/src/common.scss */
+.content pre {
+  font-family: "Courier New";
+}
+
+/* line 21, ../ext/organic-css/src/common.scss */
+.header h2, .journal .header h2,
+.journal [class^="header"] h2,
+.journal [class*=" header"] h2 {
+  border-left: dotted 1px #A7A7A7;
+}
+
+/* line 21, ../ext/organic-css/src/common.scss */
+.header, .journal .header,
+.journal [class^="header"],
+.journal [class*=" header"] {
+  border-bottom: solid 5px #A7A7A7;
+}
+
+/* line 21, ../ext/organic-css/src/common.scss */
+.header h1, .journal .header h1,
+.journal [class^="header"] h1,
+.journal [class*=" header"] h1, .header h2, .journal .header h2,
+.journal [class^="header"] h2,
+.journal [class*=" header"] h2, .header a, .journal .header a,
+.journal [class^="header"] a,
+.journal [class*=" header"] a {
+  color: #5F7928;
+}
+
+/* line 21, ../ext/organic-css/src/common.scss */
+.header h1, .journal .header h1,
+.journal [class^="header"] h1,
+.journal [class*=" header"] h1 {
+  text-shadow: 1px -1px 1px #A7A7A7;
+}
+
+/* line 21, ../ext/organic-css/src/common.scss */
+.content pre {
+  background-color: #A7A7A7;
+  background-color: #f4f4f4;
+}
+
+/* line 21, ../ext/organic-css/src/common.scss */
+footer, .content {
+  border-top: dotted 1px #A7A7A7;
+}
+
+/* line 21, ../ext/organic-css/src/common.scss */
+.content .content-column-left {
+  color: #A7A7A7;
+  color: #747474;
+}
+
+/*@import "../ext/organic-css/example/sass/molecules/_container";*/
+@media all and (max-width: 900px) {
+  /* line 11, ../ext/organic-css/example/sass/molecules/_header.scss */
+  .header h1, .journal .header h1,
+  .journal [class^="header"] h1,
+  .journal [class*=" header"] h1 {
+    font-size: 40px;
+  }
+}
+@media all and (max-width: 620px) {
+  /* line 11, ../ext/organic-css/example/sass/molecules/_header.scss */
+  .header h1, .journal .header h1,
+  .journal [class^="header"] h1,
+  .journal [class*=" header"] h1 {
+    float: none;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+}
+@media all and (max-width: 900px) {
+  /* line 45, ../ext/organic-css/example/sass/molecules/_header.scss */
+  .header h2, .journal .header h2,
+  .journal [class^="header"] h2,
+  .journal [class*=" header"] h2 {
+    border-left: none;
+  }
+}
+@media all and (max-width: 620px) {
+  /* line 45, ../ext/organic-css/example/sass/molecules/_header.scss */
+  .header h2, .journal .header h2,
+  .journal [class^="header"] h2,
+  .journal [class*=" header"] h2 {
+    width: 50%;
+  }
+}
+
+/* line 64, ../ext/organic-css/example/sass/molecules/_content.scss */
+.content h3:before {
+  content: "♦";
+}
+@media all and (max-width: 980px) {
+  /* line 10, ../ext/organic-css/example/sass/molecules/_content.scss */
+  .content .content-column-left {
+    padding-left: 20px;
+  }
+}
+@media all and (max-width: 700px) {
+  /* line 10, ../ext/organic-css/example/sass/molecules/_content.scss */
+  .content .content-column-left {
+    padding-left: 20px;
+    padding-right: 20px;
+    float: none;
+    width: 100%;
+  }
+}
+@media all and (max-width: 980px) {
+  /* line 33, ../ext/organic-css/example/sass/molecules/_content.scss */
+  .content .content-column-right {
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 700px) {
+  /* line 33, ../ext/organic-css/example/sass/molecules/_content.scss */
+  .content .content-column-right {
+    padding-left: 20px;
+    padding-right: 20px;
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* @usage .page .header */
+/*@import "organs/_directory";*/
+/* line 2, tissues/_list.scss */
+.streams {
+  display: flex;
+}
+/* line 5, tissues/_list.scss */
+.streams div.columns {
+  width: 33%;
+}
+/* line 9, tissues/_list.scss */
+.streams ul {
+  list-style: none;
+}
+
+/*** ==========================================================================
+
+***/
+/* line 42, interface.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 43, interface.scss */
+body {
+  font-family: 'Open Sans';
+}
+
+/* line 47, interface.scss */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* line 51, interface.scss */
+.sidebar {
+  background-color: #76E4B5;
+  width: 20%;
+}
+
+/* line 56, interface.scss */
+.list {
+  background-color: #D6BC7A;
+  width: 80%;
+}
+
+/* line 2, tissues/_list.scss */
+.streams {
+  display: flex;
+}
+/* line 5, tissues/_list.scss */
+.streams div.columns {
+  width: 33%;
+}
+/* line 9, tissues/_list.scss */
+.streams ul {
+  list-style: none;
+}

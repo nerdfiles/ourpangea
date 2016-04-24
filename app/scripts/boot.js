@@ -1,34 +1,42 @@
+/***
+ * @ngdoc overview
+ * @description
+ * Boot Configuration.
+ */
+
 require.config({
   baseUrl: "scripts/",
   paths: {
-    "angular"                   : "ext/angular",
-    "angular-route"             : "ext/angular-route",
-    "angularAMD"                : "ext/angularAMD",
-    "ngload"                    : "ext/ngload",
-    "angular-animate"           : "ext/angular-animate",
-    "angular-cookies"           : "ext/angular-cookies",
-    "angular-resource"          : "ext/angular-resource",
-    "angular-sanitize"          : "ext/angular-sanitize",
-    "angular-touch"             : "ext/angular-touch",
-    "angular-aria"              : "ext/angular-aria",
-    "angular-messages"          : "ext/angular-messages",
-    "angular-material"          : "ext/angular-material",
+    "angular"                   : "ext/angular.min",
+    "angular-route"             : "ext/angular-route.min",
+    "angularAMD"                : "ext/angularAMD.min",
+    "ngload"                    : "ext/ngload.min",
+    "angular-animate"           : "ext/angular-animate.min",
+    "angular-cookies"           : "ext/angular-cookies.min",
+    "angular-resource"          : "ext/angular-resource.min",
+    "angular-sanitize"          : "ext/angular-sanitize.min",
+    "angular-touch"             : "ext/angular-touch.min",
+    "angular-aria"              : "ext/angular-aria.min",
+    "angular-messages"          : "ext/angular-messages.min",
+    "angular-material"          : "ext/angular-material.min",
     "leaflet"                   : "ext/leaflet",
     "angular-leaflet-directive" : "ext/angular-leaflet-directive.min",
 
-    "interface": "interface",
-    "directives/ngHideAuth"     : "directives/ngHideAuth",
-    "directives/ngShowAuth"     : "directives/ngShowAuth",
-    "directives/ngSearchAction" : "directives/ngSearchAction",
-    "filters/reverse"           : "filters/reverse",
+    "interface"                 : "interface",
+    "directives/ngHideAuth"     : "components/version/ngHideAuth",
+    "directives/ngShowAuth"     : "components/version/ngShowAuth",
+    "directives/ngSearchAction" : "components/search/ngSearchAction",
+    "filters/reverse"           : "components/version/filter-reverse",
 
     "routes/setup"              : "routes/setup",
     "routes/authenticate"       : "routes/authenticate",
     "routes/initialize"         : "routes/initialize",
-    "firebase"                  : "ext/firebase",
-    "angularfire"               : "ext/angularfire"
+    "routes/secured"            : "routes/secured",
 
-    // @TODO firebase, etc.
+    "firebase"                  : "ext/firebase",
+    "angularfire"               : "ext/angularfire.min",
+
+    "ramda"                     : "ext/ramda.min"
   },
 
   shim: {
@@ -37,9 +45,6 @@ require.config({
         "angular"
       ],
       "exports": "L"
-    },
-    "lodash": {
-      "exports": "_"
     },
     "angular": {
       "exports": "angular"

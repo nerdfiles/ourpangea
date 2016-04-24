@@ -1,0 +1,7 @@
+@mixin _thereom ($min: 1, $max: 10) {
+  @for $i from $min through $max {
+    .propositions-#{$i} {
+      background-color: 11#{$i}px;
+    }
+  }
+}

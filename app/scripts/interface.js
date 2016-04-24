@@ -10,6 +10,7 @@ define([
   "routes/setup",
   "routes/authenticate",
   "routes/initialize",
+  "routes/secured",
   "angular-route",
   "angular-animate",
   "angular-cookies",
@@ -18,13 +19,14 @@ define([
   "angular-messages",
   "angular-sanitize",
   "angular-touch",
+  "angular-material",
   "angular-leaflet-directive",
   "leaflet",
   "directives/ngHideAuth",
   "directives/ngShowAuth",
   "directives/ngSearchAction",
   "angularfire"
-], function (angularAMD, setup, authenticate, initialize) {
+], function (angularAMD, setup, authenticate, initialize, secured) {
 
   var __interface__ = angular.module("ourPangea", [
     "firebase",
@@ -36,15 +38,14 @@ define([
     "ngResource",
     "ngSanitize",
     "ngTouch",
+    "ngMaterial",
     "leaflet-directive",
   ]);
 
+  secured(__interface__);
+
   __interface__
 
-    .constant('SECURED_ROUTES', {})
-    .constant('FBURL', 'https://ourpangea.firebaseio.com')
-    .constant('SIMPLE_LOGIN_PROVIDERS', ['facebook'])
-    .constant('loginRedirectPath', '/login')
     .factory('Ref', ['$window', 'FBURL', function($window, FBURL) {
       return new $window.Firebase(FBURL);
     }])
@@ -70,13 +71,9 @@ define([
       'Auth',
       'SECURED_ROUTES',
       'loginRedirectPath',
+      '$window',
       initialize
     ]);
-
-    // @TODO
-    // auth
-    // config
-    // firebase.ref
 
   return angularAMD.bootstrap(__interface__);
 

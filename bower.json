@@ -21,7 +21,11 @@
     "leaflet": "1.0.0-rc.1",
     "firebase": "2.2.2",
     "angularfire": "~1.2.0",
-    "angular-material": "~1.0.7"
+    "angular-material": "~1.0.7",
+    "organic-css": "https://github.com/krasimir/organic-css.git",
+    "mu": "https://github.com/BafS/mu.git",
+    "angular-segment-analytics": "~1.1.11",
+    "ramda": "~0.21.0"
   },
   "resolutions": {
     "leaflet": "1.0.0-rc.1",

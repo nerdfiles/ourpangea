@@ -1,0 +1,17 @@
+@mixin streams () {
+  & {
+    display: flex;
+
+    div.columns {
+      width: 33%;
+    }
+      h2 { }
+      ul {
+        list-style: none;
+      }
+  }
+}
+
+.streams {
+  @include streams();
+}
