@@ -7,38 +7,46 @@
 
 define([
   'directives/SearchAction',
-  function () {
+], function () {
 
-    function HomeCtrl ($scope, leafletData) {
+  function HomeCtrl ($scope, leafletData, segment, segmentLoader) {
 
-      $scope.message = 'OurPangea';
-      $scope.loadTopics = function () {
-      };
-      $scope.loadPhotos = function () {
-      };
-      $scope.loadEvents = function () {
-      };
+    segment.track('controller test');
+    //segmentLoader.load(segment.config.apiKey);
 
-      $scope.WebPage = {
-        'page--home': true
-      };
-
-      leafletData.getMap().then(function(map) {
-        /*new L.Marker([0,0]).addTo(map);*/
+    $scope.test_query = function () {
+      segment.track(segment.events.TEST_EVENT, {
+        search: 'query'
       });
+    };
 
-      $scope.login = function () {
+    $scope.message = 'OurPangea';
 
-      };
-    }
+    $scope.loadTopics = function () {
+    };
+    $scope.loadPhotos = function () {
+    };
+    $scope.loadEvents = function () {
+    };
 
-    return [
-      '$scope',
-      'leafletData'
-      //'services/topics',
-      //'services/photos',
-      //'services/events'
-      HomeCtrl
-    ];
+    $scope.WebPage = {
+      'page--home': true
+    };
+
+    leafletData.getMap().then(function(map) {
+      /*new L.Marker([0,0]).addTo(map);*/
+    });
+
+    $scope.login = function () {
+
+    };
   }
-]);
+
+  return [
+    '$scope',
+    'leafletData'
+    'segment',
+    'segmentLoader',
+    HomeCtrl
+  ];
+});

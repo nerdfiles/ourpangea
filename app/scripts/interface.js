@@ -25,7 +25,8 @@ define([
   "directives/ngHideAuth",
   "directives/ngShowAuth",
   "directives/ngSearchAction",
-  "angularfire"
+  "angularfire",
+  "segment"
 ], function (angularAMD, setup, authenticate, initialize, secured) {
 
   var __interface__ = angular.module("ourPangea", [
@@ -40,6 +41,7 @@ define([
     "ngTouch",
     "ngMaterial",
     "leaflet-directive",
+    "ngSegment"
   ]);
 
   secured(__interface__);
@@ -59,6 +61,20 @@ define([
       authenticate
     ])
 
+    .config(['segmentProvider', 'GlobalEvents', function (segmentProvider, GlobalEvents) {
+      segmentProvider.setDebug(true).setEvents(GlobalEvents);
+      segmentProvider.track('test');
+    }])
+
+    .constant('GlobalEvents', {
+        TEST_EVENT: 'Test Event'
+    })
+
+    .constant('segmentConfig', {
+        debug  : true,
+        apiKey : 'b0OJY1kzCiWoKyHayoKZDBD1KSKkf2bq'
+    })
+
     .config([
       '$routeProvider',
       '$locationProvider',
@@ -72,6 +88,7 @@ define([
       'SECURED_ROUTES',
       'loginRedirectPath',
       '$window',
+      'segment',
       initialize
     ]);
 
