@@ -73,11 +73,6 @@ define([
       initialize
     ]);
 
-    // @TODO
-    // auth
-    // config
-    // firebase.ref
-
   return angularAMD.bootstrap(__interface__);
 
 });
