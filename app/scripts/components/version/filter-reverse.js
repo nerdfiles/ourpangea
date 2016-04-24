@@ -1,3 +1,7 @@
+/***
+ * @ngdoc filter
+ */
+
 define(['interface'], function (__interface__) {
 
   __interface__

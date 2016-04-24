@@ -32,13 +32,18 @@ define([], function () {
         controllerUrl : 'modules/chat/base'
       })
 
+      .when('/404', {
+        templateUrl   : 'scripts/statuses/404/base.html',
+        controllerUrl : 'statuses/404/base'
+      })
+
       .whenAuthenticated('/account', {
         templateUrl   : 'scripts/modules/account/base.html',
         controllerUrl : 'modules/account/base'
       })
 
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/error'
       });
 
   };

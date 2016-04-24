@@ -1,3 +1,7 @@
+/***
+ * Boot Configuration
+ */
+
 require.config({
   baseUrl: "scripts/",
   paths: {
@@ -17,10 +21,10 @@ require.config({
     "angular-leaflet-directive" : "ext/angular-leaflet-directive.min",
 
     "interface"                 : "interface",
-    "directives/ngHideAuth"     : "directives/ngHideAuth",
-    "directives/ngShowAuth"     : "directives/ngShowAuth",
-    "directives/ngSearchAction" : "directives/ngSearchAction",
-    "filters/reverse"           : "filters/reverse",
+    "directives/ngHideAuth"     : "components/version/ngHideAuth",
+    "directives/ngShowAuth"     : "components/version/ngShowAuth",
+    "directives/ngSearchAction" : "components/search/ngSearchAction",
+    "filters/reverse"           : "components/version/filter-reverse",
 
     "routes/setup"              : "routes/setup",
     "routes/authenticate"       : "routes/authenticate",
