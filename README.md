@@ -2,7 +2,7 @@
 
 ## Setup
 
-1. Install [Node.js](http://ourpangea.com/) (which will come with `npm`).
+1. Install [Node.js](http://blog.teamtreehouse.com/install-node-js-npm-windows) (which will come with `npm`).
 2. Install [Grunt](http://www.codebelt.com/javascript/install-grunt-js-on-windows/).
 3. Install [Bower](https://ruleoftech.com/2015/setting-up-bower-and-gulp-in-windows).
 
