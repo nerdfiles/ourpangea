@@ -1,6 +1,6 @@
 /**
- * @ngdoc function
- * @name ourpangea.config
+ * @ngdoc overview
+ * @name ourpangea:routes.authenticate
  * @description
  * Configuration of authenticated route business logic.
  */

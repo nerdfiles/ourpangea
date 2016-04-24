@@ -1,3 +1,8 @@
+/***
+ * @ngdoc overview
+ * @name ourpangea:routes.secured
+ * @description
+ */
 define([], function () {
 
   return function (__interface__) {
