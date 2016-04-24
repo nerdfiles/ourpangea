@@ -1,6 +1,6 @@
 /**
  * @ngdoc overview
- * @name ourpangea:routes
+ * @name ourpangea:routes.setup
  * @description
  * @usage
  *   resolve: {
@@ -18,26 +18,28 @@ define([], function () {
     $routeProvider
 
       .when('/', {
-        templateUrl: 'views/home.html',
-        controllerUrl: 'controller/home'
+        templateUrl   : 'scripts/modules/home/base.html',
+        controllerUrl : 'modules/home/base'
       })
 
       .when('/chat', {
-        templateUrl: 'views/chat.html',
-        controllerUrl: 'controller/chat'
+        templateUrl   : 'scripts/modules/chat/base.html',
+        controllerUrl : 'modules/chat/base'
       })
 
       .when('/login', {
-        templateUrl: 'views/login.html',
-        controllerUrl: 'controller/login'
+        templateUrl   : 'scripts/modules/login/base.html',
+        controllerUrl : 'modules/chat/base'
       })
 
       .whenAuthenticated('/account', {
-        templateUrl: 'views/account.html',
-        controllerUrl: 'controller/account'
+        templateUrl   : 'scripts/modules/account/base.html',
+        controllerUrl : 'modules/account/base'
       })
 
-      .otherwise({redirectTo: '/'});
+      .otherwise({
+        redirectTo: '/'
+      });
 
   };
 

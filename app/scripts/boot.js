@@ -16,7 +16,7 @@ require.config({
     "leaflet"                   : "ext/leaflet",
     "angular-leaflet-directive" : "ext/angular-leaflet-directive.min",
 
-    "interface": "interface",
+    "interface"                 : "interface",
     "directives/ngHideAuth"     : "directives/ngHideAuth",
     "directives/ngShowAuth"     : "directives/ngShowAuth",
     "directives/ngSearchAction" : "directives/ngSearchAction",
@@ -30,7 +30,6 @@ require.config({
     "firebase"                  : "ext/firebase",
     "angularfire"               : "ext/angularfire"
 
-    // @TODO firebase, etc.
   },
 
   shim: {
